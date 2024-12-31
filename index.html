@@ -1,0 +1,427 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Astrologer Website</title>
+
+  <!-- Font Awesome CDN Link -->
+  <script src="https://kit.fontawesome.com/b1ae26236b.js" crossorigin="anonymous"></script>
+
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <!-- CSS Linking -->
+   <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body class="bg-gray-200">
+  
+  <!-- Navigation Bar -->
+   <header class="fixed top-0 w-full text-white shadow-lg z-50 bg-white">
+    <div class="container mx-auto px-6 py-6 flex justify-between items-center">
+      <!-- Logo -->
+       <a href="#" class="font-bold text-3xl text-black">AstroloHello</a>
+
+       <!-- Hidden on Small Screen Show on Larger Screen -->
+        <nav class="hidden lg:flex space-x-6">
+          <a href="./index.html" class="text-1xl font-medium hover:text-gray-600 hover:underline text-black">Home</a>
+          <a href="./about.html" class="text-1xl font-medium hover:text-gray-600 hover:underline text-black">About</a>
+          <a href="./services.html" class="text-1xl font-medium hover:text-gray-600 hover:underline text-black">Services</a>
+          <a href="./whyastrohello.html" class="text-1xl font-medium hover:text-gray-600 hover:underline text-black">why AstroHello</a>
+          <a href="./contact.html" class="text-1xl font-medium hover:text-gray-600 hover:underline text-black">Contact</a>
+        </nav>
+        
+        <div class="flex items-center space-x-4 md:space-x-6">
+
+          <a href="/services.html" class="hidden lg:inline-block px-6 py-4 border border-black rounded-lg font-bold bg-white text-black hover:bg-black hover:text-white transition duration-300"><span class="pr-1"><i class="fa-solid fa-question"></i></span>Ask a Question</a>
+
+          <button class="lg:hidden text-black hover:text-red-500 transition duration-300" id="menu-toggle">
+            <i class="fas fa-bars fa-2xl"></i>
+          </button>
+    
+        </div>
+    </div>
+
+
+    <!-- Mobile Navigation Bar Show on Mobile Screen hidden on larger screen -->
+     <div class="lg:hidden px-6 py-2 space-y-2 hidden" id="mobile-menu">
+      <a href="./index.html" class="text-2xl font-bold block py-2 text-black text-center hover:text-gray-600 hover:underline">Home</a>
+      <a href="./about.html" class="text-2xl font-bold block py-2 text-black text-center hover:text-gray-600 hover:underline">About</a>
+      <a href="./services.html" class="text-2xl font-bold block py-2 text-black text-center hover:text-gray-600 hover:underline">Services</a>
+      <a href="./whyastrohello.html" class="text-2xl font-bold block py-2 text-black text-center hover:text-gray-600 hover:underline">Why AstroHello</a>
+      <a href="./contact.html" class="text-2xl font-bold block py-2 text-black text-center hover:text-gray-600 hover:underline">Contact</a>
+      
+        <div class="flex justify-center items-center">
+          <a href="/services.html" class="border border-black bg-white text-black font-bold hover:bg-black hover:text-white px-6 py-4 rounded-lg "><span class="pr-1"><i class="fa-solid fa-question"></i></span>Ask a Question</a>
+        </div>
+      </div>
+
+     </div>
+   </header>
+
+
+   <!-- HOME SECTION -->
+    <section class="bg-pink-50 py-12 min-h-screen" id="home">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 flex justify-between items-center">
+          <div class="col-span-2">
+            <h1 class="text-3xl font-bold text-center lg:text-left">Navigate Life with Astrology's Guiding Light</h1>
+            <h1 class="text-5xl font-bold text-center lg:text-left mt-4">Decoding Your Cosmic Blueprint</h1>
+            <p class="text-2xl font-bold text-center lg:text-left mt-4">Life isn't random—your birth, time, and place are all part of a bigger cosmic plan. Astrology acts like a map, guiding you through life's big decisions with clarity. With the right insights, you can make smarter choices and avoid unnecessary detours.</p>
+
+            <div class="mt-6 flex justify-start items-center gap-4">
+              <a href="/services.html" class="border border-black bg-white text-black font-bold hover:bg-black hover:text-white px-6 py-4 rounded-full ">
+                <span class="pr-1"><i class="fa-solid fa-star"></i></span>Our Services</a>
+              <a href="/services.html" class="border border-black bg-white text-black font-bold hover:bg-black hover:text-white px-6 py-4 rounded-full ">
+                <span class="pr-1"><i class="fa-solid fa-question"></i></span>Ask a Question</a>
+            </div>
+          </div>
+
+          <div class="col-span-2 mt-4 flex justify-center items-center">
+            <img src="./Assets/New Logo.jpg" alt="" style="height: 500px; width: 500px;" class="rounded-lg shadow-lg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profession Section -->
+<section class="py-12 bg-white">
+  <div class="container mx-auto">
+    <div class="bg-red-200 shadow-lg rounded-lg mt-8">
+      <div class="min-w p-4 grid grid-cols-2 md:grid-cols-4">
+        <div class="bg-white rounded-lg shadow-lg p-4 m-2">
+          <div class="flex justify-center items-center">
+            <span class="text-5xl p-2 text-center"><i class="fa-solid fa-users"></i></span>
+          </div>
+          <h1 class="font-bold text-5xl text-center text-red-700">1000+</h1>
+          <p class="font-medium text-2xl text-center">Happy Clients</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-4 m-2">
+          <div class="flex justify-center items-center">
+            <span class="text-5xl p-2 text-center"><i class="fa-solid fa-business-time"></i></span>
+          </div>
+          <h1 class="font-bold text-5xl text-center text-red-700">100%</h1>
+          <p class="font-medium text-2xl text-center">Accurate Prediction</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-4 m-2">
+          <div class="flex justify-center items-center">
+            <span class="text-5xl p-2 text-center"><i class="fa-solid fa-graduation-cap"></i></span>
+          </div>
+          <h1 class="font-bold text-5xl text-center text-red-700">10+</h1>
+          <p class="font-medium text-2xl text-center">Experience</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-4 m-2">
+          <div class="flex justify-center items-center">
+            <span class="text-5xl p-2 text-center"><i class="fa-solid fa-face-smile"></i></span>
+          </div>
+          <h1 class="font-bold text-5xl text-center text-red-700">100%</h1>
+          <p class="font-medium text-2xl text-center">Solutions</p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+     <!-- About Section -->
+     <section class="py-12 bg-gray-100">
+      <div class="container mx-auto">
+        <h1 class="font-bold text-left text-black text-5xl mb-8">Know About Us:</h1>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="col-span-2">
+            <img src="./Assets/About 1.jpg" alt="Img" class="rounded-lg shadow-lg">
+          </div>
+          <div class="col-span-2">
+            <h1 class="font-bold text-left text-2xl pl-4">Know Your Daily Horoscope By</h1>
+            <h1 class="font-bold text-left text-5xl pl-4 mt-2">Nadeem Astromaster</h1>
+            <p class="font-medium text-left text-2xl pl-4 pt-6 pb-4">According to ancient Indian wisdom, each soul's journey into this world is far from random. Your birth is intricately linked to a specific date, time, place, and chosen parents, all guided by your unique karma and life purpose. The alignment of planets at the moment of your birth plays a crucial role in shaping your life's path.</p>
+            <p class="font-medium text-left text-2xl pl-4 pb-6">Navigating significant life decisions, such as career changes, relationship concerns, or financial investments, can be daunting. Imagine trying to find a destination without a map—it’s possible, but the journey may be inefficient and uncertain. Accurate astrological consultation acts as a guiding map, helping you make informed choices and avoid unnecessary detours.</p>
+            <a href="/services.html" class="border border-black bg-white text-black font-bold hover:bg-black hover:text-white px-6 py-2 rounded-lg mt-4 ml-4">Know More</a>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <!-- Services Section -->
+      <section class="py-12 min-h-screen bg-red-100">
+        <div class="container mx-auto">
+          <h1 class="text-center font-bold text-3xl text-gray-700">Our</h1>
+          <h1 class="text-center font-bold text-5xl text-black mb-8">Services</h1>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="p-4 rounded-lg shadow-lg bg-white">
+              <img src="./Assets/1.2.jpg" alt="Img" class="rounded-lg">
+              <h1 class="font-bold text-3xl mt-2">Single Question Consultation:</h1>
+              <div class="mt-6 mb-4">
+                <a href="./services.html" class="px-6 py-4 border border-black text-black font-bold rounded-lg  hover:bg-black hover:text-white">Know More</a>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-lg shadow-lg bg-white">
+              <img src="./Assets/1.3.jpg" alt="Img" class="rounded-lg">
+              <h1 class="font-bold text-3xl mt-2">Two Questions Consultation:</h1>
+              <div class="mt-6 mb-4">
+                <a href="./services.html" class="px-6 py-4 border border-black text-black font-bold rounded-lg  hover:bg-black hover:text-white">Know More</a>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-lg shadow-lg bg-white">
+              <img src="./Assets/1.4.jpg" alt="Img" class="rounded-lg">
+              <h1 class="font-bold text-3xl mt-2">Compatibility Report & Finance:</h1>
+              <div class="mt-6 mb-4">
+                <a href="./services.html" class="px-6 py-4 border border-black text-black font-bold rounded-lg  hover:bg-black hover:text-white">Know More</a>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-lg shadow-lg bg-white">
+              <img src="./Assets/1.5.jpg" alt="Img" class="rounded-lg">
+              <h1 class="font-bold text-3xl mt-2">Ralationship Insights & Career:</h1>
+              <div class="mt-6 mb-4">
+                <a href="./services.html" class="px-6 py-4 border border-black text-black font-bold rounded-lg  hover:bg-black hover:text-white">Know More</a>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+      </section>  
+
+
+      <!-- Ask A Question Section -->
+      <section class="py-12 min-w bg-white"  id="astrologer">
+      <div class="container mx-auto p-4 h-88 rounded-lg shadow-lg" style="background-image: url(./Assets/1.1.jpg); background-repeat: no-repeat; background-size: cover;">
+        <div class="flex justify-between items-center">
+          <div>
+            <h1 class="text-white font-bold text-3xl text-center">ASK YOUR QUESTIONS :</h1>
+          </div>
+          <div>
+            <a href="/services.html" class="border border-black bg-white text-black font-bold px-4 md:px-6 py-2 md:py-4 rounded-lg">Ask a Question<span class="pl-1"><i class="fa-solid fa-question"></i></span></a>
+          </div>
+        </div>
+
+          <h1 class="text-red-500 font-bold text-5xl text-center mt-4">With Birth Time:</h1>
+          <p class="text-white font-noraml text-2xl text-center">If you know your exact birth time, I can provide a precise analysis that taps into <br/>the unique energies at play in your chart.</p>
+
+          <h1 class="text-red-500 font-bold text-5xl text-center mt-4">Without Birth Time:</h1>
+          <p class="text-white font-noraml text-2xl text-center">No birth time? No problem. I can still offer valuable guidance <br/> based on other astrological techniques.</p>
+          
+      </div>
+      </section>
+
+
+
+       <!-- Client Testimonials -->
+       <section class="py-20 bg-pink-50" id="reviews">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center text-gray-700" data-aos="fade-up">Here From</h2>
+          <h2 class="text-5xl font-bold text-center  mb-12 text-red-500" data-aos="fade-up">Our Happy Clients</h2>
+
+          <!-- Swiper -->
+           <div class="swiper testimonial-slider">
+            <div class="swiper-wrapper">
+
+              <!-- Testimonial-1 -->
+              <div class="swiper-slide">
+                <div class="testimonial-card bg-white rounded-lg shadow-lg overflow-hidden p-8 mx-4" data-aos="fade-up" data-aos-dely="300">  
+                  <div class="flex items-center mb-4">
+                    <img src="./Assets/Client 1.webp" alt="Client-1" class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                      <h4 class="text-2xl font-bold text-gray-800 ">Manoj Kumar</h4>
+                      <p class="text-gray-600 font-medium">Delhi</p>
+                    </div>
+                  </div>
+                  <p class="text-gray-700">
+                    "The astrologer was incredibly insightful and accurate. They provided valuable guidance and helped me understand myself and my life path better."
+                  </p>
+                </div>
+              </div>
+
+
+              <!-- Testimonial-2 -->
+              <div class="swiper-slide">
+                <div class="testimonial-card bg-white rounded-lg shadow-lg overflow-hidden p-8 mx-4" data-aos="fade-up" data-aos-dely="300">  
+                  <div class="flex items-center mb-4">
+                    <img src="./Assets/Client 2.webp" alt="Client-1" class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                      <h4 class="text-2xl font-bold text-gray-800">Shakthi Rathore</h4>
+                      <p class="text-gray-600 font-medium">Rajasthan</p>
+                    </div>
+                  </div>
+                  <p class="text-gray-700">
+                    "I was skeptical at first, but the astrologer's predictions were spot on. It's amazing how accurate astrology can be!" My experience was good.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Testimonial-3 -->
+              <div class="swiper-slide">
+                <div class="testimonial-card bg-white rounded-lg shadow-lg overflow-hidden p-8 mx-4" data-aos="fade-up" data-aos-dely="300">  
+                  <div class="flex items-center mb-4">
+                    <img src="./Assets/Client 3.webp" alt="Client-1" class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                      <h4 class="text-2xl font-bold text-gray-800">Katrina kaif</h4>
+                    <p class="text-gray-600 font-medium">Chennai</p>
+                    </div>
+                  </div>
+                  <p class="text-gray-700">
+                    "The consultation was very helpful and informative. The astrologer answered all my questions patiently and provided practical advice."
+                  </p>
+                </div>
+              </div>
+
+
+              <!-- Testimonial-4 -->
+              <div class="swiper-slide">
+                <div class="testimonial-card bg-white rounded-lg shadow-lg overflow-hidden p-8 mx-4" data-aos="fade-up" data-aos-dely="300">  
+                  <div class="flex items-center mb-4">
+                    <img src="./Assets/Client 4.webp" alt="Client-1" class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                      <h4 class="text-2xl font-bold text-gray-800">Vikram Kapoor</h4>
+                      <p class="text-gray-600 font-medium">Himachal</p>
+                    </div>
+                  </div>
+                  <p class="text-gray-700">
+                    "I'm so grateful for the astrologer's guidance. They helped me navigate a difficult time in my life and gave me hope for the future."
+                  </p>
+                </div>
+              </div>
+
+
+              <!-- Testimonial-5 -->
+              <div class="swiper-slide">
+                <div class="testimonial-card bg-white rounded-lg shadow-lg overflow-hidden p-8 mx-4" data-aos="fade-up" data-aos-dely="300">  
+                  <div class="flex items-center mb-4">
+                    <img src="./Assets/Client 5.webp" alt="Client-1" class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                      <h4 class="text-2xl font-bold text-gray-800">Manish Tiwari</h4>
+                    <p class="text-gray-600 font-medium">Bihar</p>
+                    </div>
+                  </div>
+                  <p class="text-gray-700">
+                    "The astrologer's positive and encouraging approach made a big difference. I feel more confident and optimistic about the future."
+                  </p>
+                </div>
+              </div>
+
+
+           </div>
+
+
+           <div class="swiper-pagination"></div>
+
+
+        </div>
+
+        </div>
+      </section>
+
+
+      <!-- Footer Section -->
+       <section class="py-12 bg-black text-white">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="p-4">
+              <div class="flex justify-center items-center">
+                <div>
+                  <img src="./Assets/New Logo.jpg" alt="" class="h-20 w-20 rounded-lg shadow-lg">
+                </div>
+                <div class="ml-4">
+                  <h1 class="font-bold text-4xl">AstroHello</h1>
+                  <p class="font-medium text-xsl">By Nadeem Astromaster</p>
+                </div>
+              </div>
+
+              <!-- Icons -->
+               <div class="m-6">
+                <span class="text-4xl p-2" style="cursor: pointer;"><i class="fa-brands fa-facebook"></i></span>
+                <span class="text-4xl p-2" style="cursor: pointer;"><i class="fa-brands fa-square-instagram"></i></span>
+                <span class="text-4xl p-2" style="cursor: pointer;"><i class="fa-brands fa-square-twitter"></i></span>
+                <span class="text-4xl p-2" style="cursor: pointer;"><i class="fa-brands fa-linkedin"></i></span>
+               </div>
+
+               <!-- Address & Email -->
+                <div>
+                  <h1 class="font-bold text-2xl">Astrohello123@gmail.com</h1>
+                  <p class="font-normal text-xl pt-2">Steet: 123, City: Delhi, State: Delhi, Pin: 110001</p>
+                  <p class="font-normal text-xl pt-2">Mobile No: +91 1234567890</p>
+                </div>
+            </div>
+
+
+
+            <div class="p-6">
+              <h1 class="text-3xl font-medium">General</h1><br>
+              <a href="/about.html" class="text-2xl font-normal hover:text-gray-300">
+                <span class="pr-1"><i class="fa-solid fa-check"></i></span>About</a><br>
+              <a href="/services.html" class="text-2xl font-normal hover:text-gray-300">
+                <span class="pr-1"><i class="fa-solid fa-check"></i></span>Services</a><br>
+              <a href="./whyastrohello.html" class="text-2xl font-normal hover:text-gray-300">
+                <span class="pr-1"><i class="fa-solid fa-check"></i></span>Why AstroHello</a><br>
+              <a href="/contact.html" class="text-2xl font-normal hover:text-gray-300">
+                <span class="pr-1"><i class="fa-solid fa-check"></i></span>Contact</a><br>
+              <a href="#" class="text-2xl font-normal hover:text-gray-300">
+                <span class="pr-1"><i class="fa-solid fa-check"></i></span>FAQ's</a>
+            </div>
+
+
+            <div class="p-6">
+              <h1 class="text-3xl font-medium">Horoscope Reading</h1><br>
+              <a href="/about.html" class="text-2xl font-normal hover:text-gray-300">
+                <span class="pr-1"><i class="fa-solid fa-check"></i></span>Education</a><br>
+              <a href="/services.html" class="text-2xl font-normal hover:text-gray-300">
+                <span class="pr-1"><i class="fa-solid fa-check"></i></span>Health</a><br>
+              <a href="/blog.html" class="text-2xl font-normal hover:text-gray-300">
+                <span class="pr-1"><i class="fa-solid fa-check"></i></span>Relationship</a><br>
+              <a href="/contact.html" class="text-2xl font-normal hover:text-gray-300">
+                <span class="pr-1"><i class="fa-solid fa-check"></i></span>Profession</a><br>
+              <a href="#" class="text-2xl font-normal hover:text-gray-300">
+                <span class="pr-1"><i class="fa-solid fa-check"></i></span>Career</a><br>
+              <a href="#" class="text-2xl font-normal hover:text-gray-300">
+                <span class="pr-1"><i class="fa-solid fa-check"></i></span>Property</a><br>
+              <a href="#" class="text-2xl font-normal hover:text-gray-300">
+                <span class="pr-1"><i class="fa-solid fa-check"></i></span>Complete Horoscope</a>
+            </div>
+
+
+            <div class="p-6">
+              <h1 class="text-3xl font-medium">Vastu Analysis</h1><br>
+              <a href="/about.html" class="text-2xl font-normal hover:text-gray-300">
+                <span class="pr-1"><i class="fa-solid fa-check"></i></span>Resident</a><br>
+              <a href="/services.html" class="text-2xl font-normal hover:text-gray-300">
+                <span class="pr-1"><i class="fa-solid fa-check"></i></span>Office</a><br>
+            </div>
+          </div>
+
+
+          <hr class="p-[1px] bg-white rounded-full">
+          <h1 class="text-2xl font-normal text-center pt-2">AstroHello</h1>
+          <p class="text-xsl font-normal text-center">© Copyright AstroHello. All rights reserved.</p>
+        </div>
+       </section>
+
+  
+
+
+
+
+  <!-- Swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- AOS.js -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- JavaScript Linking -->
+   <script src="script.js"></script>
+
+   <!-- ConfigurationFile Linking -->
+    <script src="config.js"></script>
+</body>
+</html>

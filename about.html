@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Astrologer Website</title>
+
+  <!-- Font Awesome CDN Link -->
+  <script src="https://kit.fontawesome.com/b1ae26236b.js" crossorigin="anonymous"></script>
+
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <!-- CSS Linking -->
+   <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body class="bg-gray-200">
+  
+  <!-- Navigation Bar -->
+   <header class="fixed top-0 w-full text-white shadow-lg z-50 bg-white">
+    <div class="container mx-auto px-6 py-6 flex justify-between items-center">
+      <!-- Logo -->
+       <a href="#" class="font-bold text-3xl text-black">AstroHello</a>
+
+       <!-- Hidden on Small Screen Show on Larger Screen -->
+        <nav class="hidden lg:flex space-x-6">
+          <a href="./index.html" class="text-1xl font-medium hover:text-gray-600 hover:underline text-black">Home</a>
+          <a href="./about.html" class="text-1xl font-medium hover:text-gray-600 hover:underline text-black">About</a>
+          <a href="./services.html" class="text-1xl font-medium hover:text-gray-600 hover:underline text-black">Services</a>
+          <a href="./whyastrohello.html" class="text-1xl font-medium hover:text-gray-600 hover:underline text-black">Why AstroHello</a>
+          <a href="./contact.html" class="text-1xl font-medium hover:text-gray-600 hover:underline text-black">Contact</a>
+        </nav>
+        
+        <div class="flex items-center space-x-4 md:space-x-6">
+
+          <a href="/services.html" class="hidden lg:inline-block px-6 py-4 border border-black rounded-lg font-bold bg-white text-black hover:bg-black hover:text-white transition duration-300"><span class="pr-1"><i class="fa-solid fa-question"></i></span>Ask a Question</a>
+
+          <button class="lg:hidden text-black hover:text-red-500 transition duration-300" id="menu-toggle">
+            <i class="fas fa-bars fa-2xl"></i>
+          </button>
+    
+        </div>
+    </div>
+
+
+    <!-- Mobile Navigation Bar Show on Mobile Screen hidden on larger screen -->
+     <div class="lg:hidden px-6 py-2 space-y-2 hidden" id="mobile-menu">
+      <a href="./index.html" class="text-2xl font-bold block py-2 text-black text-center hover:text-gray-600 hover:underline">Home</a>
+      <a href="./about.html" class="text-2xl font-bold block py-2 text-black text-center hover:text-gray-600 hover:underline">About</a>
+      <a href="./services.html" class="text-2xl font-bold block py-2 text-black text-center hover:text-gray-600 hover:underline">Services</a>
+      <a href="./whyastrohello.html" class="text-2xl font-bold block py-2 text-black text-center hover:text-gray-600 hover:underline">Why AstroHello</a>
+      <a href="./contact.html" class="text-2xl font-bold block py-2 text-black text-center hover:text-gray-600 hover:underline">Contact</a>
+      
+        <div class="flex justify-center items-center">
+          <a href="/services.html" class="border border-black bg-white text-black font-bold hover:bg-black hover:text-white px-6 py-4 rounded-lg "><span class="pr-1"><i class="fa-solid fa-question"></i></span>Ask a Question</a>
+        </div>
+      </div>
+
+     </div>
+   </header>
+
+
+
+   <section class="py-12" style="margin-top: 100px;">
+    <div class="container mx-auto">
+      <h1 class="font-bold text-5xl text-center text-red-500">Know Your Daily Horoscope By</h1>
+      <h1 class="font-bold text-5xl text-center text-black">Nadeem Astromaster</h1>
+      <div class="border-2 border-pink-500 shadow-lg rounded-lg bg-white mt-4 p-4">
+        <div class="mt-4 flex flex-col justify-center items-center">
+          <img src="./Assets/About 1.jpg" alt="Img" class="w-96 h-96 rounded-full shadow-lg border-4 border-pink-500 p-4">
+        
+
+          <h1 class="text-5xl font-bold text-center md:text-left mt-4">Nadeem Astromaster:</h1>
+          <p class=" font-medium text-gray-600 text-xl mt-2">"My journey into astrology is deeply connected to a lifetime of learning, exploration, and a sense of karmic purpose. With two master’s degrees—one from India and another from the UK—and a corporate career that took me across different countries, I’ve gained a broad perspective on life. These experiences have deepened my understanding of the complexities of life and the diverse challenges people face, which now enriches my approach to astrology.
+            <br>
+            Astrology, for me, is a sacred responsibility; it’s an ancient science that harmonizes cosmic wisdom with the realities of life. Having studied under esteemed mentors, I’ve dedicated years to refining my craft, blending scholarly knowledge with intuitive insights. I believe astrology should be accessible to those in genuine need, offering guidance and clarity during life’s uncertain moments.
+          <br>
+            Skepticism toward astrology is natural, and I understand that this guidance isn’t for everyone. People often seek answers only when the timing is karmically right. From my years of experience, I can confidently say that I’ve witnessed the transformative power of astrology to illuminate paths and bring direction during times of doubt.
+          <br>
+            Choosing the right guide on this journey is crucial. My consultations focus on unlocking the potential within your chart, guided by the ancient wisdom of astrology. This process is deeply personal to me, and I approach each session with care and dedication.
+          <br>
+            Thank you for considering me as your guide on this journey. Together, let’s unlock the ancient Vedic knowledge of astrological signs to help you navigate your path with clarity and confidence."</p>
+          </div>
+      </div>
+    </div>
+   </section>
+
+
+
+
+
+
+   <!-- Footer Section -->
+   <section class="py-12 bg-black text-white">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="p-4">
+          <div class="flex justify-center items-center">
+            <div>
+              <img src="./Assets/New Logo.jpg" alt="" class="h-20 w-20 rounded-lg shadow-lg">
+            </div>
+            <div class="ml-4">
+              <h1 class="font-bold text-4xl">AstroHello</h1>
+              <p class="font-medium text-xsl">By Nadeem Astromaster</p>
+            </div>
+          </div>
+
+          <!-- Icons -->
+           <div class="m-6">
+            <span class="text-4xl p-2" style="cursor: pointer;"><i class="fa-brands fa-facebook"></i></span>
+            <span class="text-4xl p-2" style="cursor: pointer;"><i class="fa-brands fa-square-instagram"></i></span>
+            <span class="text-4xl p-2" style="cursor: pointer;"><i class="fa-brands fa-square-twitter"></i></span>
+            <span class="text-4xl p-2" style="cursor: pointer;"><i class="fa-brands fa-linkedin"></i></span>
+           </div>
+
+           <!-- Address & Email -->
+            <div>
+              <h1 class="font-bold text-2xl">Astrohello123@gmail.com</h1>
+              <p class="font-normal text-xl pt-2">Steet: 123, City: Delhi, State: Delhi, Pin: 110001</p>
+              <p class="font-normal text-xl pt-2">Mobile No: +91 1234567890</p>
+            </div>
+        </div>
+
+
+
+        <div class="p-6">
+          <h1 class="text-3xl font-medium">General</h1><br>
+          <a href="/about.html" class="text-2xl font-normal hover:text-gray-300">
+            <span class="pr-1"><i class="fa-solid fa-check"></i></span>About</a><br>
+          <a href="/services.html" class="text-2xl font-normal hover:text-gray-300">
+            <span class="pr-1"><i class="fa-solid fa-check"></i></span>Services</a><br>
+          <a href="./whyastrohello.html" class="text-2xl font-normal hover:text-gray-300">
+            <span class="pr-1"><i class="fa-solid fa-check"></i></span>Why AstroHello</a><br>
+          <a href="/contact.html" class="text-2xl font-normal hover:text-gray-300">
+            <span class="pr-1"><i class="fa-solid fa-check"></i></span>Contact</a><br>
+          <a href="#" class="text-2xl font-normal hover:text-gray-300">
+            <span class="pr-1"><i class="fa-solid fa-check"></i></span>FAQ's</a>
+        </div>
+
+
+        <div class="p-6">
+          <h1 class="text-3xl font-medium">Horoscope Reading</h1><br>
+          <a href="/about.html" class="text-2xl font-normal hover:text-gray-300">
+            <span class="pr-1"><i class="fa-solid fa-check"></i></span>Education</a><br>
+          <a href="/services.html" class="text-2xl font-normal hover:text-gray-300">
+            <span class="pr-1"><i class="fa-solid fa-check"></i></span>Health</a><br>
+          <a href="/blog.html" class="text-2xl font-normal hover:text-gray-300">
+            <span class="pr-1"><i class="fa-solid fa-check"></i></span>Relationship</a><br>
+          <a href="/contact.html" class="text-2xl font-normal hover:text-gray-300">
+            <span class="pr-1"><i class="fa-solid fa-check"></i></span>Profession</a><br>
+          <a href="#" class="text-2xl font-normal hover:text-gray-300">
+            <span class="pr-1"><i class="fa-solid fa-check"></i></span>Career</a><br>
+          <a href="#" class="text-2xl font-normal hover:text-gray-300">
+            <span class="pr-1"><i class="fa-solid fa-check"></i></span>Property</a><br>
+          <a href="#" class="text-2xl font-normal hover:text-gray-300">
+            <span class="pr-1"><i class="fa-solid fa-check"></i></span>Complete Horoscope</a>
+        </div>
+
+
+        <div class="p-6">
+          <h1 class="text-3xl font-medium">Vastu Analysis</h1><br>
+          <a href="/about.html" class="text-2xl font-normal hover:text-gray-300">
+            <span class="pr-1"><i class="fa-solid fa-check"></i></span>Resident</a><br>
+          <a href="/services.html" class="text-2xl font-normal hover:text-gray-300">
+            <span class="pr-1"><i class="fa-solid fa-check"></i></span>Office</a><br>
+        </div>
+      </div>
+
+
+      <hr class="p-[1px] bg-white rounded-full">
+      <h1 class="text-2xl font-normal text-center pt-2">AstroHello</h1>
+      <p class="text-xsl font-normal text-center">© Copyright AstroHello. All rights reserved.</p>
+    </div>
+   </section>
+
+
+
+   
+
+
+
+
+
+
+
+   <!-- Swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- AOS.js -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- JavaScript Linking -->
+   <script src="script.js"></script>
+
+   <!-- ConfigurationFile Linking -->
+    <script src="config.js"></script>
+</body>
+</html>

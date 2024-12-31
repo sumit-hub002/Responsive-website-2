@@ -1,0 +1,284 @@
+<!doctype html>
+  <html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Astrologer Website</title>
+
+    <!-- Font Awesome CDN Link -->
+    <script src="https://kit.fontawesome.com/b1ae26236b.js" crossorigin="anonymous"></script>
+
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"   />
+
+    <!-- CSS Linking -->
+    <link rel="stylesheet" href="style.css">
+
+
+  </head>
+
+  <body class="bg-gray-200">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 w-full text-white shadow-lg z-50 bg-white">
+      <div class="container mx-auto px-6 py-6 flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#" class="font-bold text-3xl text-black">AstroloHello</a>
+
+        <!-- Hidden on Small Screen Show on Larger Screen -->
+        <nav class="hidden lg:flex space-x-6">
+          <a href="./index.html" class="text-1xl font-medium hover:text-gray-600 hover:underline text-black">Home</a>
+          <a href="./about.html"
+            class="text-1xl font-medium hover:text-gray-600 hover:underline text-black">About</a>
+          <a href="./services.html" class="text-1xl font-medium hover:text-gray-600 hover:underline text-black">Services</a>
+          <a href="./whyastrohello.html" class="text-1xl font-medium hover:text-gray-600 hover:underline text-black">Why AstroHello</a>
+          <a href="./contact.html"
+            class="text-1xl font-medium hover:text-gray-600 hover:underline text-black">Contact</a>
+        </nav>
+
+        <div class="flex items-center space-x-4 md:space-x-6">
+
+          <a href="/services.html"
+            class="hidden lg:inline-block px-6 py-4 border border-black rounded-lg font-bold bg-white text-black hover:bg-black hover:text-white transition duration-300"><span
+              class="pr-1"><i class="fa-solid fa-question"></i></span>Ask a Question</a>
+
+          <button class="lg:hidden text-black hover:text-red-500 transition duration-300" id="menu-toggle">
+            <i class="fas fa-bars fa-2xl"></i>
+          </button>
+
+        </div>
+      </div>
+
+
+      <!-- Mobile Navigation Bar Show on Mobile Screen hidden on larger screen -->
+      <div class="lg:hidden px-6 py-2 space-y-2 hidden" id="mobile-menu">
+        <a href="./index.html"
+          class="text-2xl font-bold block py-2 text-black text-center hover:text-gray-600 hover:underline">Home</a>
+        <a href="./about.html"
+          class="text-2xl font-bold block py-2 text-black text-center hover:text-gray-600 hover:underline">About</a>
+        <a href="./services.html"
+          class="text-2xl font-bold block py-2 text-black text-center hover:text-gray-600 hover:underline">Services</a>
+          <a href="./whyastrohello.html"
+          class="text-2xl font-bold block py-2 text-black text-center hover:text-gray-600 hover:underline">Why AstroHello</a>
+        <a href="./contact.html"
+          class="text-2xl font-bold block py-2 text-black text-center hover:text-gray-600 hover:underline">Contact</a>
+
+        <div class="flex justify-center items-center">
+          <a href="/services.html"
+            class="border border-black bg-white text-black font-bold hover:bg-black hover:text-white px-6 py-4 rounded-lg "><span
+              class="pr-1"><i class="fa-solid fa-question"></i></span>Ask a Question</a>
+        </div>
+      </div>
+
+      </div>
+    </header>
+
+
+
+    <section class="py-12 bg-red-50" id="contact" style="margin-top: 100px;">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="col-span-2 text-center md:text-left">
+            <h1 class="text-6xl font-bold text-black">Customer Care</h1>
+            <h1 class="text-3xl font-bold text-black mt-4">We are 24 hours available for you</h1>
+            <div class="m-6">
+              <span class="text-4xl p-2 text-blue-500" style="cursor: pointer;"><i
+                  class="fa-brands fa-facebook"></i></span>
+              <span class="text-4xl p-2 text-pink-500" style="cursor: pointer;"><i
+                  class="fa-brands fa-square-instagram"></i></span>
+              <span class="text-4xl p-2" style="cursor: pointer;"><i class="fa-brands fa-square-twitter"></i></span>
+              <span class="text-4xl p-2 text-blue-500" style="cursor: pointer;"><i
+                  class="fa-brands fa-linkedin"></i></span>
+            </div>
+            <div class="py-2">
+              <a href="/services.html"
+                class="border-2 border-pink-500 bg-white text-black font-bold px-6 py-4 rounded-lg "><span
+                  class="pr-1"><i class="fa-solid fa-question"></i></span>Ask a Question</a>
+            </div>
+          </div>
+
+          <div class="col-span-2 flex justify-center items-center">
+            <img src="./Assets/New Logo.jpg" alt="Img" class="w-60 h-60 rounded-lg shadow-lg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 bg-gray-200">
+      <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold   
+ text-center mb-8">Book a Appointment</h1>
+        <form id="appointmentForm" class="space-y-4">
+            <div>
+                <label for="name" class="block text-xl font-medium text-gray-700">Name</label>
+                <input type="text" id="name" name="name"   
+ required class="mt-1 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 block w-full">   
+
+            </div>
+            <div>
+                <label for="email" class="block text-xl font-medium text-gray-700">Email</label>
+                <input type="email" id="email" name="email" required   
+ class="mt-1 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 block w-full">   
+
+            </div>
+            <div>
+                <label for="phone" class="block text-xl font-medium text-gray-700">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required class="mt-1 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 block w-full">   
+
+            </div>
+            <div>
+                <label for="date" class="block text-xl font-medium text-gray-700">Preferred Date</label>
+                <input type="date" id="date" name="date" required class="mt-1 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 block w-full">   
+
+            </div>
+            <div>
+                <label for="time" class="block text-xl font-medium text-gray-700">Preferred Time</label>
+                <input type="time" id="time" name="time" required class="mt-1 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 block w-full">   
+
+            </div>
+            <div>
+                <label for="message" class="block text-xl font-medium text-gray-700">Message</label>
+                <textarea id="message" name="message" rows="4"   
+ class="mt-1 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 block w-full"></textarea>   
+
+            </div>
+            <div class="">
+              <a href="/services.html"
+                class="border border-black bg-white text-black font-bold hover:bg-black hover:text-white px-6 py-4 rounded-lg ">Book Appointment</a>
+            </div>
+        </form>
+    </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <section class="py-12 bg-black text-white">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="p-4">
+            <div class="flex justify-center items-center">
+              <div>
+                <img src="./Assets/New Logo.jpg" alt="" class="h-20 w-20 rounded-lg shadow-lg">
+              </div>
+              <div class="ml-4">
+                <h1 class="font-bold text-4xl">AstroHello</h1>
+                <p class="font-medium text-xsl">By Nadeem Astromaster</p>
+              </div>
+            </div>
+
+            <!-- Icons -->
+            <div class="m-6">
+              <span class="text-4xl p-2" style="cursor: pointer;"><i class="fa-brands fa-facebook"></i></span>
+              <span class="text-4xl p-2" style="cursor: pointer;"><i class="fa-brands fa-square-instagram"></i></span>
+              <span class="text-4xl p-2" style="cursor: pointer;"><i class="fa-brands fa-square-twitter"></i></span>
+              <span class="text-4xl p-2" style="cursor: pointer;"><i class="fa-brands fa-linkedin"></i></span>
+            </div>
+
+            <!-- Address & Email -->
+            <div>
+              <h1 class="font-bold text-2xl">Astrohello123@gmail.com</h1>
+              <p class="font-normal text-xl pt-2">Steet: 123, City: Delhi, State: Delhi, Pin: 110001</p>
+              <p class="font-normal text-xl pt-2">Mobile No: +91 1234567890</p>
+            </div>
+          </div>
+
+
+
+          <div class="p-6">
+            <h1 class="text-3xl font-medium">General</h1><br>
+            <a href="/about.html" class="text-2xl font-normal hover:text-gray-300">
+              <span class="pr-1"><i class="fa-solid fa-check"></i></span>About</a><br>
+            <a href="/services.html" class="text-2xl font-normal hover:text-gray-300">
+              <span class="pr-1"><i class="fa-solid fa-check"></i></span>Services</a><br>
+            <a href="./whyastrohello.html" class="text-2xl font-normal hover:text-gray-300">
+              <span class="pr-1"><i class="fa-solid fa-check"></i></span>Why AstroHello</a><br>
+            <a href="/contact.html" class="text-2xl font-normal hover:text-gray-300">
+              <span class="pr-1"><i class="fa-solid fa-check"></i></span>Contact</a><br>
+            <a href="#" class="text-2xl font-normal hover:text-gray-300">
+              <span class="pr-1"><i class="fa-solid fa-check"></i></span>FAQ's</a>
+          </div>
+
+
+          <div class="p-6">
+            <h1 class="text-3xl font-medium">Horoscope Reading</h1><br>
+            <a href="/about.html" class="text-2xl font-normal hover:text-gray-300">
+              <span class="pr-1"><i class="fa-solid fa-check"></i></span>Education</a><br>
+            <a href="/services.html" class="text-2xl font-normal hover:text-gray-300">
+              <span class="pr-1"><i class="fa-solid fa-check"></i></span>Health</a><br>
+            <a href="/blog.html" class="text-2xl font-normal hover:text-gray-300">
+              <span class="pr-1"><i class="fa-solid fa-check"></i></span>Relationship</a><br>
+            <a href="/contact.html" class="text-2xl font-normal hover:text-gray-300">
+              <span class="pr-1"><i class="fa-solid fa-check"></i></span>Profession</a><br>
+            <a href="#" class="text-2xl font-normal hover:text-gray-300">
+              <span class="pr-1"><i class="fa-solid fa-check"></i></span>Career</a><br>
+            <a href="#" class="text-2xl font-normal hover:text-gray-300">
+              <span class="pr-1"><i class="fa-solid fa-check"></i></span>Property</a><br>
+            <a href="#" class="text-2xl font-normal hover:text-gray-300">
+              <span class="pr-1"><i class="fa-solid fa-check"></i></span>Complete Horoscope</a>
+          </div>
+
+
+          <div class="p-6">
+            <h1 class="text-3xl font-medium">Vastu Analysis</h1><br>
+            <a href="/about.html" class="text-2xl font-normal hover:text-gray-300">
+              <span class="pr-1"><i class="fa-solid fa-check"></i></span>Resident</a><br>
+            <a href="/services.html" class="text-2xl font-normal hover:text-gray-300">
+              <span class="pr-1"><i class="fa-solid fa-check"></i></span>Office</a><br>
+          </div>
+        </div>
+
+
+        <hr class="p-[1px] bg-white rounded-full">
+        <h1 class="text-2xl font-normal text-center pt-2">AstroHello</h1>
+        <p class="text-xsl font-normal text-center">© Copyright AstroHello. All rights reserved.</p>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- AOS.js -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- JavaScript Linking -->
+    <script src="script.js"></script>
+
+    <!-- ConfigurationFile Linking -->
+    <script src="config.js"></script>
+  </body>
+
+  </html>
+
+
+
+
+
+
+
+
+
+  <!-- Swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- AOS.js -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- JavaScript Linking -->
+  <script src="script.js"></script>
+
+  <!-- ConfigurationFile Linking -->
+  <script src="config.js"></script>
+  </body>
+
+  </html>
